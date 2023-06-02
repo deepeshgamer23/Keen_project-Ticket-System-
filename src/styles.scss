@@ -780,7 +780,7 @@ html {
             margin-top: 2rem;
         }
 
-        &-button{
+        &-button {
             padding: 12px;
             margin-top: 1.5rem;
             border-radius: 6px;
@@ -790,7 +790,7 @@ html {
             cursor: pointer;
         }
 
-        &-login{
+        &-login {
             text-align: center;
             cursor: pointer;
             font-weight: 400;
@@ -805,3 +805,91 @@ html {
 }
 
 /* Forgot password end */
+
+
+
+
+/* Dashboard Start */
+.dashboard {
+
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content {
+        &-title {
+            & h1 {
+                text-align: center;
+                padding-left: 3rem;
+            }
+        }
+
+        &-body {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            &-items {
+                padding: 4rem 4rem;
+                border: 1px solid;
+                margin-top: 2rem;
+                cursor: pointer;
+
+                & p {
+                    text-align: center;
+                }
+            }
+
+            &-unpaid {
+                padding: 4rem 2rem;
+                border: 1px solid;
+                margin-top: 2rem;
+                cursor: pointer;
+
+                & p {
+                    text-align: center;
+                }
+            }
+        }
+
+        &-services{
+            display: inline-grid;
+            line-height: 3;
+            width: 21rem;
+            margin-top: 4rem;
+            margin-left: 4.5rem;
+
+            &-title {
+                border: 1px solid;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            &-list {
+                border: 1px solid;
+                height: 37vh;
+            }
+        }
+
+        &-ticketlist{
+            display: inline-grid;
+            line-height: 3;
+            width: 21rem;
+            margin-top: 4rem;
+            margin-left: 9rem;
+
+            &-title {
+                border: 1px solid;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            &-list {
+                border: 1px solid;
+                height: 37vh;
+            }
+        }
+    }
+}
+
+/* Dashboard end */
