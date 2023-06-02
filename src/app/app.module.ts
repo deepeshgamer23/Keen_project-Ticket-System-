@@ -5,17 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-import { MainSecondComponent } from './main-second/main-second.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { RealLoginComponent } from './real-login/real-login.component';
+import { SignUpComponent } from './SignUp/sign-up.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainComponent,
-    MainSecondComponent,
-    FooterComponent,    
+    FooterComponent,
+    RealLoginComponent,
+    ForgotPassComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,6 @@ import { FooterComponent } from './footer/footer.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas : [CUSTOM_ELEMENTS_SCHEMA],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
