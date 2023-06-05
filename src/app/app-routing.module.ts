@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignUpComponent } from './SignUp/sign-up.component';
+import { SignUpComponent } from './user-auth/SignUp/sign-up.component';
 import { MainComponent } from './main/main.component';
-import { RealLoginComponent } from './real-login/real-login.component';
+import { RealLoginComponent } from './user-auth/real-login/real-login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
