@@ -5,7 +5,7 @@
         row-gap: 2rem;
     }
 
-    &__content{
+    &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -13,7 +13,8 @@
         padding: 0.5rem calc((100vw - 1200px) / 2);
         z-index: 10;
         position: relative;
-        &-logo{
+
+        &-logo {
             color: $purple;
             cursor: pointer;
             font-size: 2rem;
@@ -26,6 +27,10 @@
 
             & li {
                 margin-right: 20px;
+
+                .navbar__content-item-1 {
+                    color: $purple;
+                }
             }
 
             & a {
@@ -43,7 +48,7 @@
             // }
         }
 
-        &-userauth{
+        &-userauth {
             &-btn:nth-child(1) {
                 background-color: $white;
                 border: none;
@@ -51,16 +56,16 @@
                 font-size: 17px;
                 outline: none;
                 cursor: pointer;
-    
+
                 &:hover {
                     color: $purple;
                 }
-    
+
                 // @include tablet {
                 //     display: none;
                 // }
             }
-    
+
             &-btn:nth-child(2) {
                 background-color: $purple;
                 color: $white;
@@ -70,20 +75,20 @@
                 border-radius: 6px;
                 margin-left: 16px;
                 cursor: pointer;
-    
+
                 &:hover {
                     background-color: $orangeRed;
                     transition: all .3s ease;
                 }
-    
+
                 // @include tablet {
                 //     display: none;
                 // }
             }
-    
+
             &-menu--bar {
                 opacity: 0;
-    
+
                 // @include tablet {
                 //     opacity: 1;
                 //     color: $black;
@@ -92,8 +97,8 @@
                 //     right: 20px;
                 //     font-size: 2rem;
             }
+        }
     }
-}
 }
 
 
