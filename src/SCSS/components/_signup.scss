@@ -1,0 +1,76 @@
+.signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+
+    &__container {
+        row-gap: 2rem;
+        column-gap: 3rem;
+    }
+
+    &__content {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 14rem;
+        line-height: 5;
+
+        &-subtitle {
+            font-size: 1.125rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &-input {
+            padding: 12px 20rem;
+            padding-left: 20px;
+            border: 1px solid $grey;
+            outline: none;
+            border-radius: 5px;
+            color: $text;
+            cursor: text;
+            margin-top: 1rem;
+        }
+
+        &-checkbox {
+            display: flex;
+            align-items: center;
+
+            & input {
+                width: 2vw;
+                height: 3vh;
+                cursor: pointer;
+            }
+
+            & p {
+                line-height: 1.2;
+                font-size: 14px;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                padding-left: 1rem;
+            }
+        }
+
+        &-button {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: $purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        &-signIn {
+            text-align: center;
+            cursor: pointer;
+            font-weight: 400;
+
+            & a {
+                font-weight: 500;
+                text-decoration: none;
+                color: $purple;
+            }
+        }
+    }
+}

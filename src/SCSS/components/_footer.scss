@@ -1,0 +1,75 @@
+.footer {
+    background-color: $purple;
+    padding-bottom: 2rem;
+
+    &__container {
+        background-color: $purple;
+        row-gap: 2rem;
+        column-gap: 3rem;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__content {
+        background-color: $purple;
+    }
+
+    &__title,
+    &__logo {
+        background-color: $purple;
+        font-size: 1.125rem;
+        margin-bottom: .5rem;
+    }
+
+    &__logo {
+        background-color: $purple;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: 600;
+        color: black;
+    }
+
+    &__description,
+    &__link {
+        background-color: $purple;
+        font-size: .813rem;
+        color: hsl(45, 4%, 15%);
+    }
+
+    &__links {
+        background-color: $purple;
+        display: grid;
+        row-gap: .5rem;
+
+        & li {
+            list-style: none;
+            background-color: $purple;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: $purple;
+        color: hsl(45, 4%, 15%);
+    }
+
+    &__social {
+        background-color: $purple;
+        display: flex;
+        column-gap: 1.5rem;
+
+        &-link {
+            background-color: $purple;
+            font-size: 1.25rem;
+            color: hsl(45, 4%, 15%);
+            ;
+        }
+    }
+
+    &__copy {
+        background-color: $purple;
+        margin-top: 2rem;
+        text-align: center;
+        font-size: .813rem;
+        color: hsl(45, 4%, 65%);
+    }
+}

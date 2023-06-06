@@ -1,0 +1,92 @@
+.navbar {
+    &_list {
+        background-color: $white;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem calc((100vw - 1200px) / 2);
+        z-index: 10;
+        position: relative;
+
+
+        & h1 {
+            color: $purple;
+            cursor: pointer;
+            font-size: 2rem;
+            padding-left: 25px;
+        }
+
+        &-items {
+            display: flex;
+            list-style: none;
+
+            & li {
+                margin-right: 20px;
+            }
+
+            & a {
+                color: $black;
+                text-decoration: none;
+
+                &:hover {
+                    color: $purple;
+                    transition: all .3s ease;
+                }
+            }
+
+            // @include tablet {
+            //     display: none;
+            // }
+        }
+
+        &-btn:nth-child(1) {
+            background-color: $white;
+            border: none;
+            color: $black;
+            font-size: 17px;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $purple;
+            }
+
+            // @include tablet {
+            //     display: none;
+            // }
+        }
+
+        &-btn:nth-child(2) {
+            background-color: $purple;
+            color: $white;
+            border: none;
+            outline: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            margin-left: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $orangeRed;
+                transition: all .3s ease;
+            }
+
+            // @include tablet {
+            //     display: none;
+            // }
+        }
+
+        &-menu--bar {
+            opacity: 0;
+
+            // @include tablet {
+            //     opacity: 1;
+            //     color: $black;
+            //     position: absolute;
+            //     top: 22px;
+            //     right: 20px;
+            //     font-size: 2rem;
+        }
+    }
+}

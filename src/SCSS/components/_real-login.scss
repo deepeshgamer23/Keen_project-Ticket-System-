@@ -1,0 +1,145 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        row-gap: 2rem;
+        column-gap: 3rem;
+
+    }
+
+    &__content {
+        display: grid;
+
+        &-subtitle {
+            font-size: 1.125rem;
+            margin-bottom: .5rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &-google {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.50rem;
+            padding: 10px 13rem;
+            border: 1px solid $grey;
+            border-radius: 5px;
+            color: $text;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+
+            & img {
+                width: 20px;
+            }
+        }
+
+        &-facebook {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.70rem;
+            padding: 10px 13rem;
+            border: 1px solid $grey;
+            border-radius: 5px;
+            color: $text;
+            cursor: pointer;
+
+            & img {
+                width: 20px;
+            }
+        }
+
+        &-or {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: $text;
+            margin-top: 2rem;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 1px;
+                display: flex;
+                background: #e1e1e1;
+            }
+
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                display: flex;
+                background: #e1e1e1;
+            }
+        }
+
+        &-subtitle2 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: .80rem;
+            color: $text;
+            font-weight: 500;
+        }
+
+        &-signup {
+            text-align: center;
+            cursor: pointer;
+            font-weight: 400;
+
+            & a {
+                font-weight: 500;
+                text-decoration: none;
+                color: $purple;
+            }
+        }
+    }
+
+    &__form {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        line-height: 5;
+
+        & input {
+            padding: 12px 26rem;
+            padding-left: 20px;
+            border: 1px solid $grey;
+            outline: none;
+            border-radius: 5px;
+            color: $text;
+            cursor: text;
+        }
+
+        & input:nth-child(2) {
+            margin-top: 1rem;
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 14px;
+            text-align: end;
+            font-weight: 300;
+            cursor: pointer;
+            background: transparent;
+            color: $text;
+        }
+
+        & button {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: $purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 2rem;
+        }
+    }
+}

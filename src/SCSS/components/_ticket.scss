@@ -1,0 +1,120 @@
+.ticket {
+    border: 1px solid $grey;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content {
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-h2 {
+                font-size: 1.25rem;
+            }
+
+            &-button {
+                text-decoration: none;
+                background-color: dodgerblue;
+                color: white;
+                border-radius: 2rem;
+                padding: 0.5rem 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+        &-line::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            display: flex;
+            background: #e1e1e1;
+            margin-top: 1.3rem;
+        }
+
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            pointer-events: none;
+
+            &-items:nth-child(1) {
+                padding-left: 3rem;
+            }
+
+            &-items:nth-child(2) {
+                padding-left: 10rem;
+            }
+
+            &-items {
+                text-decoration: none;
+                color: $text;
+            }
+        }
+
+        &-main {
+            &-items {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: .90rem;
+                border: 1px solid $grey;
+                padding: 1rem;
+                border-radius: 0.3rem;
+
+                &-logo {
+                    border: 1px solid;
+                    padding: 0.7rem 1rem;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    background-color: deepskyblue;
+                    color: white;
+                }
+
+                &-subject {
+                    margin-left: -4rem;
+                    text-decoration: none;
+                    color: $black;
+                }
+
+                &-number {
+                    padding-left: 5.5rem;
+                    text-decoration: none;
+                    color: $black;
+
+                }
+
+                &-priority {
+                    text-decoration: none;
+                    color: $black;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    border: 2px solid $grey;
+                    border-radius: 2rem;
+                    padding: 0.3rem 0.6rem;
+                    cursor: pointer;
+                }
+
+                &-requested {
+                    text-decoration: none;
+                    color: $black;
+                }
+
+                &-agent {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+
+        }
+    }
+}

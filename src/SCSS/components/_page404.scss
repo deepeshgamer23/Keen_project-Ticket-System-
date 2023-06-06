@@ -1,0 +1,21 @@
+.p404 {
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content {
+        &-gif1 {
+            width: 15rem;
+            position: relative;
+            left: 22rem;
+            z-index: 14;
+        }
+
+        &-gif2 {
+            width: 100%;
+            position: relative;
+            bottom: 7rem;
+            margin-bottom: -11rem;
+        }
+    }
+}
