@@ -1,16 +1,19 @@
+/*============================ header Scss ===========================*/
+
 .navbar {
-    &_list {
-        background-color: $white;
-        height: 80px;
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 80px;
         padding: 0.5rem calc((100vw - 1200px) / 2);
         z-index: 10;
         position: relative;
-
-
-        & h1 {
+        &-logo{
             color: $purple;
             cursor: pointer;
             font-size: 2rem;
@@ -40,53 +43,66 @@
             // }
         }
 
-        &-btn:nth-child(1) {
-            background-color: $white;
-            border: none;
-            color: $black;
-            font-size: 17px;
-            outline: none;
-            cursor: pointer;
-
-            &:hover {
-                color: $purple;
+        &-userauth{
+            &-btn:nth-child(1) {
+                background-color: $white;
+                border: none;
+                color: $black;
+                font-size: 17px;
+                outline: none;
+                cursor: pointer;
+    
+                &:hover {
+                    color: $purple;
+                }
+    
+                // @include tablet {
+                //     display: none;
+                // }
             }
-
-            // @include tablet {
-            //     display: none;
-            // }
-        }
-
-        &-btn:nth-child(2) {
-            background-color: $purple;
-            color: $white;
-            border: none;
-            outline: none;
-            padding: 10px 25px;
-            border-radius: 6px;
-            margin-left: 16px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $orangeRed;
-                transition: all .3s ease;
+    
+            &-btn:nth-child(2) {
+                background-color: $purple;
+                color: $white;
+                border: none;
+                outline: none;
+                padding: 10px 25px;
+                border-radius: 6px;
+                margin-left: 16px;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: $orangeRed;
+                    transition: all .3s ease;
+                }
+    
+                // @include tablet {
+                //     display: none;
+                // }
             }
-
-            // @include tablet {
-            //     display: none;
-            // }
-        }
-
-        &-menu--bar {
-            opacity: 0;
-
-            // @include tablet {
-            //     opacity: 1;
-            //     color: $black;
-            //     position: absolute;
-            //     top: 22px;
-            //     right: 20px;
-            //     font-size: 2rem;
-        }
+    
+            &-menu--bar {
+                opacity: 0;
+    
+                // @include tablet {
+                //     opacity: 1;
+                //     color: $black;
+                //     position: absolute;
+                //     top: 22px;
+                //     right: 20px;
+                //     font-size: 2rem;
+            }
     }
 }
+}
+
+
+
+
+
+
+// content: "/";
+//     display: inline-block;
+//     font-weight: 600;
+//     color: var(--qode-main-color);
+//     margin-right: 6px;

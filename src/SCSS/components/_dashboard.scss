@@ -1,41 +1,64 @@
+/*============================ dashboard Scss ===========================*/
+
 .dashboard {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 1150px;
+    background-color: dodgerblue;
 
     &__container {
         row-gap: 2rem;
     }
 
     &__content {
+        background-color: dodgerblue;
+
         &-title {
             & h1 {
+                background-color: dodgerblue;
+                color: $white;
                 text-align: center;
                 padding-left: 3rem;
             }
         }
 
         &-body {
+            background-color: dodgerblue;
             display: flex;
             justify-content: center;
             gap: 2rem;
 
             &-items {
                 padding: 4rem 4rem;
-                border: 1px solid;
+                border: 1px solid $white;
                 margin-top: 2rem;
                 cursor: pointer;
+                border-radius: 1rem;
 
                 & p {
                     text-align: center;
+                }
+                & p:nth-child(1) {
+                    font-size: 1.5rem;
+                    color: orangered;
                 }
             }
 
             &-unpaid {
                 padding: 4rem 2rem;
-                border: 1px solid;
+                border: 1px solid $white;
                 margin-top: 2rem;
                 cursor: pointer;
+                border-radius: 1rem;
 
                 & p {
                     text-align: center;
+                }
+                & p:nth-child(1) {
+                    font-size: 1.5rem;
+                    color: orangered;
                 }
             }
         }
@@ -43,38 +66,76 @@
         &-services {
             display: inline-grid;
             line-height: 3;
-            width: 21rem;
+            width: 24rem;
             margin-top: 4rem;
-            margin-left: 4.5rem;
+            margin-left: 7.5rem;
 
             &-title {
-                border: 1px solid;
+                border: 1px solid $white;
                 text-align: center;
                 font-weight: 500;
+                // border-top-left-radius: 0.5rem;
+                // border-top-right-radius: 0.5rem;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    display: flex;
+                    background-color: $grey;
+                }
             }
 
             &-list {
-                border: 1px solid;
+                border: 1px solid $white;
                 height: 37vh;
+                text-align: center;
+                // border-bottom-left-radius: 0.5rem;
+                // border-bottom-right-radius: 0.5rem;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    display: flex;
+                    background-color: $grey;
+                }
             }
         }
 
         &-ticketlist {
             display: inline-grid;
             line-height: 3;
-            width: 21rem;
+            width: 24rem;
             margin-top: 4rem;
             margin-left: 9rem;
 
             &-title {
-                border: 1px solid;
+                border: 1px solid $white;
                 text-align: center;
                 font-weight: 500;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    display: flex;
+                    background-color: $grey;
+                }
             }
 
             &-list {
-                border: 1px solid;
+                border: 1px solid $white;
                 height: 37vh;
+                text-align: center;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    display: flex;
+                    background-color: $grey;
+                }
             }
         }
     }
