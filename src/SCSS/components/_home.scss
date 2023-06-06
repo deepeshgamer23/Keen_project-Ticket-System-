@@ -3,10 +3,10 @@
 
 .main {
     background-color: $white;
-
-    &_container {
+    width: 1060px;
+    &__container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
         align-items: center;
         justify-items: center;
         margin: 0 auto;
@@ -21,9 +21,7 @@
 
         &--left {
             width: 100%;
-            line-height: 1.2;
-            margin-left: 45px;
-
+            line-height: 1.5;
             // @include tablet {
             //     padding: 5rem 0;
             // }
@@ -35,7 +33,7 @@
 
 
             & h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
                 color: $purple;
 
                 // @include mobile {
@@ -44,16 +42,17 @@
             }
 
             & h2 {
-                font-size: 2rem;
+                font-size: 1rem;
                 color: $black;
+                color: hsl(45,4%,35%)
 
                 // @include mobile {
                 //     font-size: 1.5rem;
                 // }
+            }
 
-                & span {
-                    color: orangered;
-                }
+            & span {
+                color: $orangeRed;
             }
 
 
