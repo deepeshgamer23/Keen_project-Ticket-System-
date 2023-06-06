@@ -5,6 +5,8 @@ import { MainComponent } from './main/main.component';
 import { RealLoginComponent } from './user-auth/real-login/real-login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TicketComponent } from './ticket/ticket.component';
+import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,15 @@ const routes: Routes = [
   {
     path:'dashboard',
     component:DashboardComponent,
-  }
+  },
+  {
+    path:'ticket',
+    component:TicketComponent,
+  },
+  {
+    path:'**',
+    component:Page404Component,
+  },
 ];
 
 @NgModule({

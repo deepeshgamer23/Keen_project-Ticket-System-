@@ -8,7 +8,9 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserAuthModule} from './user-auth/user-auth.module'
+import { UserAuthModule} from './user-auth/user-auth.module';
+import { TicketComponent } from './ticket/ticket.component';
+import { Page404Component } from './page404/page404.component'
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { UserAuthModule} from './user-auth/user-auth.module'
     FooterComponent,
     ForgotPassComponent,
     DashboardComponent,
+    TicketComponent,
+    Page404Component,
   ],
   imports: [
     BrowserModule,
