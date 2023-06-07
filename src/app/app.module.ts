@@ -10,7 +10,9 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserAuthModule} from './user-auth/user-auth.module';
 import { TicketComponent } from './ticket/ticket.component';
-import { Page404Component } from './page404/page404.component'
+import { Page404Component } from './page404/page404.component';
+import { NewTicketComponent } from './new-ticket/new-ticket.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { Page404Component } from './page404/page404.component'
     DashboardComponent,
     TicketComponent,
     Page404Component,
+    NewTicketComponent,
   ],
   imports: [
     BrowserModule,

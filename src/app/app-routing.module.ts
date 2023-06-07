@@ -7,6 +7,7 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { Page404Component } from './page404/page404.component';
+import { NewTicketComponent } from './new-ticket/new-ticket.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'ticket',
     component:TicketComponent,
+  },
+  {
+    path:'Nticket',
+    component:NewTicketComponent,
   },
   {
     path:'**',
