@@ -34,6 +34,10 @@
             margin-bottom: 1rem;
             cursor: pointer;
 
+            &:hover{
+                border: 1px solid #7a7a7a !important;
+            }
+
             & img {
                 width: 20px;
             }
@@ -49,6 +53,10 @@
             border-radius: 5px;
             color: $text;
             cursor: pointer;
+
+            &:hover{
+                border: 1px solid #7a7a7a !important;
+            }
 
             & img {
                 width: 20px;
