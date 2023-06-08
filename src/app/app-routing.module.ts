@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignUpComponent } from './user-auth/SignUp/sign-up.component';
-import { MainComponent } from './main/main.component';
-import { RealLoginComponent } from './user-auth/real-login/real-login.component';
-import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { TicketComponent } from './ticket/ticket.component';
-import { Page404Component } from './page404/page404.component';
-import { NewTicketComponent } from './new-ticket/new-ticket.component';
+import { SignUpComponent } from './components/SignUp/sign-up.component';
+import { MainComponent } from './components/main/main.component';
+import { RealLoginComponent } from './components/real-login/real-login.component';
+import { ForgotPassComponent } from './components/forgot-pass/forgot-pass.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TicketComponent } from './components/ticket/ticket.component';
+import { Page404Component } from './components/page404/page404.component';
+import { NewTicketComponent } from './components/new-ticket/new-ticket.component';
 
 const routes: Routes = [
   {
