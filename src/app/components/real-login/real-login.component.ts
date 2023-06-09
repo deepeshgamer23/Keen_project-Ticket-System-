@@ -33,7 +33,7 @@ export class RealLoginComponent {
     }
     else{
       this.submitted = false;
-      this.LoginForm.reset;
+      this.LoginForm.reset();
     }
   }
 }

@@ -1,13 +1,17 @@
 <!--============================ footer-password ===========================-->
 
-<div class="forgot section container">
+<div class="forgot section container" [formGroup]="forgotpass">
     <div class="forgot__container grid">
         <div class="forgot__content">
             <h1 class="forgot__content-title">Forgot Password</h1>
             <p class="forgot__content-p">Forgot your password? Just enter your email address to receive a link to reset your password.</p>
-            <input type="text" placeholder="Username or Email" class="forgot__content-input" maxlength="30">
-            <button class="forgot__content-button">Reset Password</button>
-            <p class="forgot__content-login">Back to <a routerLink="Login">Login</a> </p>
+            <input type="text" placeholder="Enter your email" class="forgot__content-input" formControlName="forgot" maxlength="30">
+            <div *ngIf="submitted && f.forgot.errors">
+                <div *ngIf="f.forgot.errors.required" class="co">Please enter your email</div>
+                <div *ngIf="f.forgot.errors.email" class="co">Please enter a valid email</div>
+            </div>
+            <button class="forgot__content-button" (click)="onClick()">Reset Password</button>
+            <p class="forgot__content-login">Back to <a routerLink="../Login">Login</a> </p>
         </div>
     </div>
 </div>
