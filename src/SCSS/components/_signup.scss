@@ -25,8 +25,8 @@
         }
 
         &-input {
-            padding: 12px 20rem;
-            padding-left: 20px;
+            width: 31rem;
+            padding: 1rem 1rem;
             border: 1px solid $grey;
             outline: none;
             border-radius: 5px;
@@ -35,9 +35,30 @@
             margin-top: 1rem;
         }
 
+        /* Chrome, Safari, Edge, Opera */
+        & input::-webkit-outer-spin-button,
+        & input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        & input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        & .co {
+            color: red;
+            line-height: 3;
+            padding-left: 0.3rem;
+            height: 2rem;
+        }
+
         &-checkbox {
             display: flex;
             align-items: center;
+            margin-top: 3rem;
+            padding-bottom: 0rem;
 
             & input {
                 width: 2vw;
@@ -48,13 +69,15 @@
             & p {
                 line-height: 1.2;
                 font-size: 14px;
-                margin-top: 3rem;
-                margin-bottom: 3rem;
+                // margin-top: 3rem;
+                // margin-bottom: 3rem;
                 padding-left: 1rem;
+                cursor: pointer;
             }
         }
 
         &-button {
+            margin-top: 2rem;
             padding: 12px;
             border-radius: 6px;
             background-color: $purple;

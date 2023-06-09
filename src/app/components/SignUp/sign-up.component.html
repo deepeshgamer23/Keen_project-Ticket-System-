@@ -1,20 +1,47 @@
 <!--============================ Sign Up ===========================-->
 
-<form class="signUp section container">
+<form class="signUp section container" [formGroup]="SignForm">
     <div class="signUp__container grid">
         <div class="signUp__content">
             <h2 class="signUp__content-subtitle">Create Keen Profile!</h2>
-            <input type="text" placeholder="Full name" class="signUp__content-input" required="" maxlength="30">
-            <input type="text" placeholder="Email" class="signUp__content-input" required="" maxlength="40">
-            <input type="text" placeholder="Mobile number" class="signUp__content-input" required="" maxlength="15">
-            <input type="text" placeholder="Password" class="signUp__content-input" required="" maxlength="30">
-            <input type="text" placeholder="Confirm password" class="signUp__content-input" required="" maxlength="30">
-            <input type="text" placeholder="Token code" class="signUp__content-input">
-            <div class="signUp__content-checkbox">
-                <input type="checkbox">
-                <p class="signUp__content-p">By checking you acknowledge the terms of our privacy policy , and you confirm that you want to create your Keen profile.</p>
+            <input type="text" placeholder="Full name" class="signUp__content-input" formControlName="fullname"
+                maxlength="30">
+            <div *ngIf="submitted && f.fullname.errors">
+                <div *ngIf="f.fullname.errors.required" class="co">Enter your full name</div>
             </div>
-            <button class="signUp__content-button">Sign Up</button>
+            <input type="text" placeholder="Email" class="signUp__content-input" formControlName="email" maxlength="40">
+            <div *ngIf="submitted && f.email.errors">
+                <div *ngIf="f.email.errors.required" class="co">Enter your email</div>
+                <div *ngIf="f.email.errors.email" class="co">Enter your a valid email</div>
+            </div>
+            <input type="number" placeholder="Mobile number" class="signUp__content-input" formControlName="number"
+                maxlength="15">
+            <div *ngIf="submitted && f.number.errors">
+                <div *ngIf="f.number.errors.required" class="co">Enter your mobile number</div>
+            </div>
+            <input type="text" placeholder="Password" class="signUp__content-input" formControlName="pass"
+                maxlength="30">
+
+            <div *ngIf="submitted && f.pass.errors">
+                <div *ngIf="f.pass.errors.required" class="co">Enter your full name</div>
+            </div>
+
+            <input type="text" placeholder="Confirm password" formControlName="conPass" class="signUp__content-input"
+                maxlength="30">
+
+            <div *ngIf="submitted && f.conPass.errors">
+                <div *ngIf="f.conPass.errors.required" class="co">Enter your full name</div>
+            </div>
+
+            <div class="signUp__content-checkbox">
+                <input type="checkbox" formControlName="checkbox">
+                <p class="signUp__content-p ">By checking you acknowledge the terms of our <b>privacy policy</b> , and
+                    you confirm that you want to create your Keen profile.</p>
+            </div>
+            <div *ngIf="submitted && f.checkbox.errors">
+                <div *ngIf="f.checkbox.errors.required" class="co">Accept our privacy policy</div>
+            </div>
+            <button class="signUp__content-button" (click)="onSignup()">Sign Up</button>
             <p class="signUp__content-signIn">Already have an account? <a routerLink="../Login">Sign In</a></p>
         </div>
     </div>
