@@ -34,8 +34,9 @@
             margin-bottom: 1rem;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 border: 1px solid #7a7a7a !important;
+                transition: all .30s ease;
             }
 
             & img {
@@ -54,8 +55,9 @@
             color: $text;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 border: 1px solid #7a7a7a !important;
+                transition: all .30s ease;
             }
 
             & img {
@@ -118,9 +120,16 @@
         justify-content: center;
         line-height: 5;
 
+
+        & .co {
+            color: red;
+            line-height: 3;
+            padding-left: 0.3rem;
+        }
+
         & input {
-            padding: 12px 26rem;
-            padding-left: 20px;
+            width: 38rem;
+            padding: 1rem 1rem;
             border: 1px solid $grey;
             outline: none;
             border-radius: 5px;
@@ -133,9 +142,9 @@
         }
 
         & a {
+            margin-left: 28rem;
             text-decoration: none;
             font-size: 14px;
-            text-align: end;
             font-weight: 300;
             cursor: pointer;
             background: transparent;

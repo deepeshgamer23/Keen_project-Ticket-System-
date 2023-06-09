@@ -1,20 +1,31 @@
 <!--============================ Real Login ===========================-->
 
-<form class="login section container">
+<form class="login section container" [formGroup]="LoginForm">
     <div class="login__container grid">
         <div class="login__content">
             <h2 class="login__content-subtitle">Welcome To KeenInfotech</h2>
-            <button class="login__content-google"><img src="../../assets/google-logo-9808.png" alt="google"> LOGIN WITH GOOGLE </button>
-            <button class="login__content-facebook"> <img src="../../assets/Facebook_Logo_(2019).png" alt="facebook"> LOGIN WITH FACEBOOK </button>
+            <button class="login__content-google"><img src="../../assets/google-logo-9808.png" alt="google"> LOGIN WITH
+                GOOGLE </button>
+            <button class="login__content-facebook"> <img src="../../assets/Facebook_Logo_(2019).png" alt="facebook">
+                LOGIN WITH FACEBOOK </button>
             <p class="login__content-or"> Or </p>
             <h6 class="login__content-subtitle2">Sign in with your email and password !!</h6>
             <div class="login__form">
-                <input type="text" placeholder="Email" required="">
-                <input type="text" placeholder="Password" required="">
-                <a routerLink="forgotPass" >Forgot Your Password ?</a>
-                <button>Sign In</button>
+                <input type="text" placeholder="Email" formControlName="email" maxlength="30">
+
+                <div *ngIf="submitted && f.email.errors">
+                    <div *ngIf="f.email.errors.required" class="co">Please enter your email</div>
+                    <div *ngIf="f.email.errors.email" class="co">Please enter a valid email</div>
+                </div>
+                <input type="text" placeholder="Password" formControlName="password" maxlength="50">
+
+                <div *ngIf="submitted &&  f.password.errors">
+                    <div *ngIf="f.password.errors.required" class="co">Please enter your password</div>
+                </div>
+                <a routerLink="../forgotPass">Forgot Your Password ?</a>
+                <button (click)="onSignIn()">Sign In</button>
             </div>
-            <p class="login__content-signup">Don't have an account? <a routerLink="SignUp">Sign Up</a></p>
-        </div> 
+            <p class="login__content-signup">Don't have an account? <a routerLink="../SignUp">Sign Up</a></p>
+        </div>
     </div>
 </form>

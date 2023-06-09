@@ -11,6 +11,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TicketComponent } from './components/ticket/ticket.component';
 import { Page404Component } from './components/page404/page404.component';
 import { NewTicketComponent } from './components/new-ticket/new-ticket.component';
+import { RealLoginComponent } from './components/real-login/real-login.component';
+import { SignUpComponent } from './components/SignUp/sign-up.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,10 +27,13 @@ import { NewTicketComponent } from './components/new-ticket/new-ticket.component
     TicketComponent,
     Page404Component,
     NewTicketComponent,
+    RealLoginComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
